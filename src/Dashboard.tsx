@@ -18,11 +18,15 @@ const Dashboard = () => {
   return (
     <div>
       <h2>Welcome, {user.name}</h2>
-      {user.role === "user" ? (
-        <p>This is the user  dashboard</p>
-      ) : (
-        <p>This is the employee dashboard</p>
-      )}
+      <div>
+        <h2>Welcome, {user.name}</h2>
+        {user.role === "user" && <p>This is the user dashboard</p>}
+        {user.role === "employee" && <p>This is the employee dashboard</p>}
+        {user.role === "user2" && <p>This is the user2 dashboard</p>}
+        {user.role === "user3" && <p>This is the user3 dashboard</p>}
+        <button onClick={logout}>Logout</button>
+      </div>
+
       <button onClick={logout}>Logout</button>
     </div>
   );

@@ -1,7 +1,7 @@
 import  { createContext, useState, useContext, ReactNode } from "react";
 
 // Rollarni belgilash
-type Role = "user" | "employee";
+type Role = "user" | "employee" | "user2" | "user3";
 
 // Foydalanuvchi ma'lumotlari
 interface User {
